@@ -1,17 +1,18 @@
 import React from "react";
+import CartWidget from "./CartWidget";
 
 
 const navbar = () => {
   return ( 
    
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">For-tech</a>
+    <a class="navbar-brand" href="#">For-Tech</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav mx-auto">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
@@ -29,8 +30,13 @@ const navbar = () => {
             <li><a class="dropdown-item" href="#">Monitores</a></li>
             <li><a class="dropdown-item" href="#">Cpu gamer</a></li>
             <li><a class="dropdown-item" href="#">Notebook Gamers</a></li>
+           
+           
+            
           </ul>
         </li>
+
+        <li className="mover" >  <CartWidget/> </li>
       </ul>
     </div>
   </div>
