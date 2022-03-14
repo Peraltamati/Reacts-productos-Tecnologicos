@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
+import ItemCount from './components/ItemCount';
+import Item from './components/Item';
 
 <ItemListContainer texto="Hola Props"
   subtitulo="El props esta funcionando correctamente" />
@@ -16,7 +18,14 @@ function App() {
       <div >
         <ItemListContainer texto="Hola Props!"
           subtitulo="El props esta funcionando correctamente!!!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eligendi! Unde qui quos, minus voluptates nemo possimus quasi alias molestiae aliquid doloremque saepe asperiores sint dolorum fuga, vitae voluptatem inventore. " />
+         
       </div>
+      <div className='ctn'>
+        
+        <Item />
+      
+      </div>
+       
     </div>
 
 
@@ -25,6 +34,7 @@ function App() {
 
 
   );
+
 }
 
 export default App;

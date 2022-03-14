@@ -12,7 +12,7 @@ const ItemListContainer = (props) => {
       <h5> {subtitulo}</h5>
       </section> 
   </div>
-  )
+  ) 
 }
 
 export default ItemListContainer

@@ -63,6 +63,50 @@ flex-wrap: wrap;
   text-align:center;
 }
 
+.contador{
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+  margin-top: 40px;
+border-style: solid;
+background: rgb(252,182,69);
+background: rgb(252,127,69);
+background: linear-gradient(90deg, rgba(252,127,69,1) 0%, rgba(58,171,180,1) 100%, rgba(222,253,29,1) 100%); 
+  
+}
+
+.icon{
+  
+  height: 30px;
+  width: 30px;
+  
+  
+}
+.btn{
+ 
+margin-right: 35px;
+  
+}
+.botones{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: center;
+}
+.ajuste {
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+
+.ctn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 
 
 
