@@ -39,7 +39,9 @@ const restar = () => {
       <button className='btn' onClick={sumar}><img className='icon'  src={mas}/></button>
    
   </div>
+  
   </div>
+ 
 </div>
   
     

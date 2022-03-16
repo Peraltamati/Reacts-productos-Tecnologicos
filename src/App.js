@@ -2,11 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
-import ItemCount from './components/ItemCount';
 import Item from './components/Item';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
-<ItemListContainer texto="Hola Props"
-  subtitulo="El props esta funcionando correctamente" />
 
 
 
@@ -15,14 +17,10 @@ function App() {
 
     <div className="App">
       <NavBar className="App-header" />
-      <div >
-        <ItemListContainer texto="Hola Props!"
-          subtitulo="El props esta funcionando correctamente!!!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eligendi! Unde qui quos, minus voluptates nemo possimus quasi alias molestiae aliquid doloremque saepe asperiores sint dolorum fuga, vitae voluptatem inventore. " />
-         
-      </div>
+    
       <div className='ctn'>
         
-        <Item />
+       <ItemListContainer/>
       
       </div>
        
@@ -38,3 +36,5 @@ function App() {
 }
 
 export default App;
+/*  <ItemListContainer texto="Hola Props!"
+          subtitulo="El props esta funcionando correctamente!!!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eligendi! Unde qui quos, minus voluptates nemo possimus quasi alias molestiae aliquid doloremque saepe asperiores sint dolorum fuga, vitae voluptatem inventore. " />*/
