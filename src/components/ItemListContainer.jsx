@@ -1,19 +1,21 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import ItemList from './ItemList'
 
 
 
 const ItemListContainer = () => {
 
-  const [arrayproductos, setArrayProductos] = useState([
-  {titulo: "MONITOR", descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eligendi! Unde qui quos, minus voluptates nemo possimus quasi alias molestiae" },
-  {titulo: "NOTEBOOK", descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eligendi! Unde qui quos, minus voluptates nemo possimus quasi alias molestiae" },
-  {titulo: "CPU GAMER", descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eligendi! Unde qui quos, minus voluptates nemo possimus quasi alias molestiae" }
-])
+  const [arrayproductos, setArrayProductos] = useState([])
+  
+  useEffect(()=>{ 
 function productoPromise(){
   return new Promise((resolve,reject)=>{
     setTimeout(()=>{
-        let productos=[{arrayproductos}]
+        let productos=[
+          {titulo: "MONITOR", descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eligendi! Unde qui quos, minus voluptates nemo possimus quasi alias molestiae" },
+          {titulo: "NOTEBOOK", descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eligendi! Unde qui quos, minus voluptates nemo possimus quasi alias molestiae" },
+          {titulo: "CPU GAMER", descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eligendi! Unde qui quos, minus voluptates nemo possimus quasi alias molestiae" } 
+        ]
         if(productos.length===0){
           reject("No hay productos")
         }else{
@@ -22,11 +24,10 @@ function productoPromise(){
     },3000)
   })
 }
-productoPromise().then((productos)=>{
-  console.log(productos)
-}).catch((error)=>{
-  console.log("No hay productos"+error)
+productoPromise().then(productos=>setArrayProductos(productos)).catch((error)=>{
+  alert(""+error)
 })
+   },[])
 
   return (
     
