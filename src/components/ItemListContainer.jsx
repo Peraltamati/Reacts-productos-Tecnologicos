@@ -12,9 +12,9 @@ function productoPromise(){
   return new Promise((resolve,reject)=>{
     setTimeout(()=>{
         let productos=[
-          {titulo: "MONITOR", descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eligendi! Unde qui quos, minus voluptates nemo possimus quasi alias molestiae" },
-          {titulo: "NOTEBOOK", descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eligendi! Unde qui quos, minus voluptates nemo possimus quasi alias molestiae" },
-          {titulo: "CPU GAMER", descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eligendi! Unde qui quos, minus voluptates nemo possimus quasi alias molestiae" } 
+          {titulo: "MONITOR",img:"https://i.ibb.co/qYDHH4w/acer.jpg", descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eligendi! Unde qui quos, minus voluptates nemo possimus quasi alias molestiae" },
+          {titulo: "NOTEBOOK",img:"https://i.ibb.co/qYDHH4w/acer.jpg", descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eligendi! Unde qui quos, minus voluptates nemo possimus quasi alias molestiae" },
+          {titulo: "CPU GAMER",img:"https://i.ibb.co/qYDHH4w/acer.jpg", descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eligendi! Unde qui quos, minus voluptates nemo possimus quasi alias molestiae" } 
         ]
         if(productos.length===0){
           reject("No hay productos")

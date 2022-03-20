@@ -102,11 +102,10 @@ margin-right: 35px;
 
 .ctn{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 25px;
-  
-  
+  justify-content:center;
+  align-items:center;
+  margin-top: 25px;   
+
 }
 
 

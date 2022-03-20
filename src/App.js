@@ -8,6 +8,8 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import ItemDetailContainer from './components/ItemDetailContainer';
+import ItemDetail from './components/ItemDetail';
 
 
 
@@ -20,8 +22,8 @@ function App() {
     
       <div className='ctn'>
         
-       <ItemListContainer/>
-      
+       
+          <ItemDetailContainer/>
       </div>
        
     </div>
