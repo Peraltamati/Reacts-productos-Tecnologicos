@@ -1,8 +1,10 @@
 import React from 'react'
 
 const ItemDetail = ({titulo,precio,descripcion,img}) => {
+  
   return (
     <div>
+      
        <div className='container'> 
      <div className="card"  style={{ width: '18rem' }}>
       <img className="card-img-top" src={img} alt="Card image cap"/>
