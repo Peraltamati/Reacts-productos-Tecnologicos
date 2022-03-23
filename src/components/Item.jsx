@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
-const Item = ({titulo,descripcion,img}) => {
+const Item = ({id,titulo,descripcion,img,precio}) => {
   return (
     <div className='container'> 
      <div className="card"  style={{ width: '18rem' }}>
@@ -9,8 +10,8 @@ const Item = ({titulo,descripcion,img}) => {
         <div className="card-body">
           <h5 className="card-title">{titulo}</h5>
             <p className="card-text">{descripcion}</p>
-            <h6 className="card-title">$ 5200</h6>
-            <a href="#" className="btn btn-primary mx-auto">Ver mas</a>
+            <h6 className="precio">$ {precio}</h6>
+            <Link to={`/detail/${id}`} className="btn btn-primary mx-auto">Ver mas</Link>
               </div>
                 </div>
                 </div>

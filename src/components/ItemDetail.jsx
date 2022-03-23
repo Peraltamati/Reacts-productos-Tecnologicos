@@ -1,6 +1,7 @@
 import React from 'react'
+import ItemCount from './ItemCount'
 
-const ItemDetail = ({titulo,precio,descripcion,img}) => {
+const ItemDetail = ({id,titulo,precio,descripcion,img,stock}) => {
   
   return (
     <div>
@@ -11,8 +12,9 @@ const ItemDetail = ({titulo,precio,descripcion,img}) => {
         <div className="card-body">
           <h5 className="card-title">{titulo}</h5>
             <p className="card-text">{descripcion}</p>
-            <h6 className="card-title">$ {precio}</h6>
-            <a href="#" className="btn btn-primary mx-auto">Ver mas</a>
+            <h6 className='precio'>$ {precio}</h6>
+            <div className='stock'><ItemCount stock={stock}/></div>
+            <a href="#" className="btn btn-primary mx-auto">Add to Card</a>
               </div>
                 </div>
                 </div>

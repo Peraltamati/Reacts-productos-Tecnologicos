@@ -4,7 +4,7 @@ import menos from './assets/menos.png'
 
 const ItemCount = ({stock,initial}) => {
 
-const [contador, setContador]= useState(initial)
+const [contador, setContador]= useState(1)
 
  
 const sumar = () => {
@@ -25,24 +25,24 @@ const restar = () => {
 
   return (
    
-        <div className='contador'>
+       
         <div >  
-      <div >
-           <h3>CONTADOR</h3>
-           <h5>Cantidad de stock: {stock}</h5>
+      <div  >
+           
+           <h7 >Stock: {stock}</h7>
            
       </div >
       
     <div className='botones' > 
-      <button className='btn' onClick={restar} ><img className='icon'  src={menos}/></button> 
-      <h5 className='ajuste'>{contador} </h5> 
-      <button className='btn' onClick={sumar}><img className='icon'  src={mas}/></button>
+      <button className='ajuste-contador' onClick={restar} ><img className='icon'  src={menos}/></button> 
+      <h5 className='ajuste-contador'>{contador} </h5> 
+      <button className='ajuste-contador' onClick={sumar}><img className='icon'  src={mas}/></button>
    
   </div>
   
   </div>
  
-</div>
+
   
     
   )
