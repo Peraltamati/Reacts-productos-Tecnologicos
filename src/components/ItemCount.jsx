@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import mas from './assets/mas.png'
 import menos from './assets/menos.png'
 
-const ItemCount = ({stock,initial}) => {
+const ItemCount = ({stock}) => {
 
 const [contador, setContador]= useState(1)
 
@@ -27,16 +27,16 @@ const restar = () => {
    
        
         <div >  
-      <div  >
+      <div className='text-center lead ' >
            
-           <h7 >Stock: {stock}</h7>
+           <span>Unidades disponibles: {stock}</span>
            
       </div >
       
-    <div className='botones' > 
-      <button className='ajuste-contador' onClick={restar} ><img className='icon'  src={menos}/></button> 
-      <h5 className='ajuste-contador'>{contador} </h5> 
-      <button className='ajuste-contador' onClick={sumar}><img className='icon'  src={mas}/></button>
+    <div className='botones mx-auto' > 
+      <button className='btn btn-outline-primary' onClick={restar}>-</button> 
+      <span className='mx-3'>{contador} </span> 
+      <button className='btn btn-outline-primary' onClick={sumar}>+</button>
    
   </div>
   
