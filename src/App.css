@@ -153,6 +153,13 @@ background: linear-gradient(90deg, rgba(252,127,69,1) 0%, rgba(58,171,180,1) 100
   
 }
 
+.mostrar{
+
+  display: flex !important;
+  flex-direction: column !important;
+  background-color: red;
+}
+
 
 
 

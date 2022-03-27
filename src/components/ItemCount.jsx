@@ -1,22 +1,21 @@
 import React, { useState } from 'react'
 import mas from './assets/mas.png'
 import menos from './assets/menos.png'
+import ItemDetail from './ItemDetail'
 
-const ItemCount = ({stock}) => {
-
-const [contador, setContador]= useState(1)
+const ItemCount = ({stock,cantidad,setCantidad}) => {
 
  
 const sumar = () => {
-   if(contador < stock){
-    setContador(contador + 1) 
+   if(cantidad < stock){
+    setCantidad(cantidad + 1) 
    }
     
 }
 
 const restar = () => {
-    if(contador >1){
-        setContador(contador - 1)
+    if(cantidad >1){
+        setCantidad(cantidad - 1)
     }
     
 }
@@ -35,13 +34,16 @@ const restar = () => {
       
     <div className='botones mx-auto' > 
       <button className='btn btn-outline-primary' onClick={restar}>-</button> 
-      <span className='mx-3'>{contador} </span> 
+      <span className='mx-3'>{cantidad} </span> 
       <button className='btn btn-outline-primary' onClick={sumar}>+</button>
+      
+      
+      
+  </div>
    
   </div>
-  
-  </div>
- 
+
+
 
   
     
