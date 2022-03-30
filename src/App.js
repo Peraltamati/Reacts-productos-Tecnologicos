@@ -9,10 +9,13 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import { CartProvider } from './context/CartContext';
 
 
 function App() {
   return (
+    
+    <CartProvider> 
     <BrowserRouter >
     <NavBar/>
     <div className='ctn'> 
@@ -23,7 +26,10 @@ function App() {
     </Routes>
     </div>
     </BrowserRouter>
-    
+    </CartProvider>
+
+
+
    // //<div className="App">
      // <NavBar className="App-header" />
     

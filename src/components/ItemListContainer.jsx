@@ -16,13 +16,13 @@ function productoPromise(){
     setTimeout(()=>{
         let productos=[
 
-          {id:1,titulo: "MONITOR",img:"https://i.ibb.co/nPwDBPB/kisspng-benq-27-hd-computer-monitor-computer-monitors-liq-smartfocus-5b1f953f1646a2-9391566415287964.png", categoryId:"monitor",precio: "31.000",stock:10,
+          {id:1,titulo: "MONITOR",img:"https://i.ibb.co/nPwDBPB/kisspng-benq-27-hd-computer-monitor-computer-monitors-liq-smartfocus-5b1f953f1646a2-9391566415287964.png", categoryId:"monitor",precio: 31000,stock:10,
           descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eligendi! Unde qui quos, minus voluptates nemo possimus quasi alias molestiae" },
 
-          {id: 2,titulo: "NOTEBOOK",img:"https://i.ibb.co/qYDHH4w/acer.jpg", categoryId:"notebook",precio: "120.000",stock:15,
+          {id: 2,titulo: "NOTEBOOK",img:"https://i.ibb.co/qYDHH4w/acer.jpg", categoryId:"notebook",precio: 120000,stock:12,
            descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eligendi! Unde qui quos, minus voluptates nemo possimus quasi alias molestiae" },
 
-          {id:3,titulo: "CPU GAMER",img:"https://i.ibb.co/zVbgjfg/kisspng-pc-gamer-amd-fx-8300-hydra-geforce-gtx-1060-5b6349e98d1c94-675070951533233641578.png",categoryId:"gamer",precio: "250.000",stock:20,
+          {id:3,titulo: "CPU GAMER",img:"https://i.ibb.co/zVbgjfg/kisspng-pc-gamer-amd-fx-8300-hydra-geforce-gtx-1060-5b6349e98d1c94-675070951533233641578.png",categoryId:"gamer",precio: 250000,stock:20,
           descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eligendi! Unde qui quos, minus voluptates nemo possimus quasi alias molestiae" } 
         ]
         if(productos.length===0){

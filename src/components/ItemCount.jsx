@@ -26,22 +26,22 @@ const restar = () => {
    
        
         <div >  
-      <div className='text-center lead ' >
+            <div className='text-center lead ' >
            
-           <span>Unidades disponibles: {stock}</span>
+              <span>Unidades disponibles: {stock}</span>
            
-      </div >
+                </div >
       
     <div className='botones mx-auto' > 
-      <button className='btn btn-outline-primary' onClick={restar}>-</button> 
-      <span className='mx-3'>{cantidad} </span> 
-      <button className='btn btn-outline-primary' onClick={sumar}>+</button>
+      <button className='btn btn-outline-primary' disabled={stock===0} onClick={restar}>-</button> 
+        <span className='mx-3'>{cantidad} </span> 
+          <button className='btn btn-outline-primary' disabled={stock===0} onClick={sumar}>+</button>
       
       
       
-  </div>
+            </div>
    
-  </div>
+              </div>
 
 
 
