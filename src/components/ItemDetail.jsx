@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { CartContext } from '../context/CartContext'
 import CartWidget from './CartWidget'
 import ItemCount from './ItemCount'
@@ -6,7 +7,7 @@ import ItemCount from './ItemCount'
 const ItemDetail = ({id,titulo,precio,descripcion,img,stock}) => {
 
   const [cantidad, setCantidad]= useState(1)
-
+ 
   const {agregarCarrito, isInCart}=useContext(CartContext)
 
   const handleAgregar=()=> {
@@ -29,6 +30,7 @@ const ItemDetail = ({id,titulo,precio,descripcion,img,stock}) => {
     }
 
   }
+
   
   return (
 <div>
@@ -42,6 +44,9 @@ const ItemDetail = ({id,titulo,precio,descripcion,img,stock}) => {
               <h6 className='precio'>$ {precio}</h6>
                 <ItemCount stock={stock} cantidad={cantidad} setCantidad={setCantidad} />
                   <button className="btn btn-primary mx-auto"disabled={stock===0} onClick={handleAgregar}>Agregar al carrito</button>
+                    <Link to="/Cart" >
+                      <button className='btn btn-primary mx-auto mt-3'> Terminar mi compra</button>
+                    </Link>
                     </div>
                       </div>
                         </div>
