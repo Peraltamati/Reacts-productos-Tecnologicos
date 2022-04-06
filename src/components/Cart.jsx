@@ -6,11 +6,11 @@ const Cart = () => {
 
     const {cart, totalCart, vaciarCart, eliminarItem}= useContext(CartContext)
 
-    if(cart.lenght===0){
+    if(cart.length===0){
 
         return <div className='container my-4'>
                     <h2>Tu carrito esta vacio</h2>
-                        <Link to="/" className='btn btn-primary'>Volver</Link>
+                        <Link to="/" className='btn btn-primary mx-5 mt-5'>Volver</Link>
                          </div>
         
     }
@@ -25,7 +25,7 @@ const Cart = () => {
                  <img className="imgcart" src={item.img} alt="Card image cap"/>
                      <p>Cantidad: {item.cantidad}</p>
                         <p>Precio: ${item.cantidad * item.precio}</p>
-                          <button className="btn btn-danger" onClick={() => eliminarItem(item.id)}>Elimnar item</button> 
+                          <button className="btn btn-danger" onClick={() => eliminarItem(item.id)}>Eliminar item</button> 
               </div>
           ))
       }

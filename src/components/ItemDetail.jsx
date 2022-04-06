@@ -26,7 +26,7 @@ const ItemDetail = ({id,titulo,precio,descripcion,img,stock}) => {
       }
 
       agregarCarrito(addItem)
-      console.log(addItem)
+    
     }
 
   }
