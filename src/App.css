@@ -161,9 +161,18 @@ background: linear-gradient(90deg, rgba(252,127,69,1) 0%, rgba(58,171,180,1) 100
 }
 
 .imgcart{
-  height:70px;
-  width: 70px;
+  height:80px;
+  width: 80px;
 }
+
+.imgcart2{
+ display: block;
+ margin: auto;
+ height: 40%;
+ width: 50%;
+}
+
+
 
 
 

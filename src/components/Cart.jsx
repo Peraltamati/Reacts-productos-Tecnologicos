@@ -8,8 +8,8 @@ const Cart = () => {
 
     if(cart.length===0){
 
-        return <div className='container my-4'>
-                    <h2>Tu carrito esta vacio</h2>
+        return <div className="container" >
+                    <img className="imgcart2" src="https://i.ibb.co/vYg4yfj/vacio.png" alt="Card image cap"/>
                         <Link to="/" className='btn btn-primary mx-5 mt-5'>Volver</Link>
                          </div>
         
@@ -30,11 +30,11 @@ const Cart = () => {
           ))
       }
         <hr/>
-      <h2>Total: ${totalCart()}</h2>
+      <h2 className='mt-4'>Total: ${totalCart()}</h2>
 
-      <div className="my-2">
-        <button className="btn btn-danger" onClick={vaciarCart}>Vaciar carrito</button>
-            <Link to="/checkout" className="btn btn-success mx-2 mt-3">Terminar mi compra</Link>
+      <div className="my-3">
+        <button className="btn btn-danger mt-4" onClick={vaciarCart}>Vaciar carrito</button>
+            <Link to="/checkout" className="btn btn-success mx-2 mt-4">Terminar mi compra</Link>
                 </div>
     </div>
   )
