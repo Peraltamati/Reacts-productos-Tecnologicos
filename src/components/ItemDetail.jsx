@@ -44,9 +44,13 @@ const ItemDetail = ({id,titulo,precio,descripcion,img,stock}) => {
               <h6 className='precio'>$ {precio}</h6>
                 <ItemCount stock={stock} cantidad={cantidad} setCantidad={setCantidad} />
                   <button className="btn btn-primary mx-auto"disabled={stock===0} onClick={handleAgregar}>Agregar al carrito</button>
-                    <Link to="/Cart" >
-                      <button className='btn btn-primary mx-auto mt-3'> Terminar mi compra</button>
+                  { 
+                    isInCart(id)>0 &&
+                    <Link to="/Cart" className='btn btn-success mx-auto mt-3'>
+                                Ver carrito 
                     </Link>
+                    }
+                      <Link to="/" className='btn btn-secondary mx-auto mt-3'>Regresar al listado</Link>
                     </div>
                       </div>
                         </div>
