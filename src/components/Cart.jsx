@@ -26,9 +26,9 @@ const Cart = () => {
             
               <div key={item.id} className="container">
                 <div className='ctn'>
-                 <h4 className=' mx-2'>{item.titulo}</h4>
-                 <img className="imgcart " src={item.img} alt="Card image cap"/>
-                     <p className='mx-2'>Cantidad: {item.cantidad}</p>
+                   <h4 className=' mx-2'>{item.titulo}</h4>
+                    <img className="imgcart " src={item.img} alt="Card image cap"/>
+                      <p className='mx-2'>Cantidad: {item.cantidad}</p>
                         <p className='mx-2'>Precio: ${item.cantidad * item.precio}</p>
                         
               </div>
@@ -36,7 +36,7 @@ const Cart = () => {
               <hr/>
               </div>
               
-             
+              
               
               
           ))

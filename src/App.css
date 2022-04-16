@@ -110,12 +110,25 @@ background: linear-gradient(90deg, rgba(252,127,69,1) 0%, rgba(58,171,180,1) 100
 
 .ctn{
   display: flex;
-  justify-content:center;
+  flex-flow: row wrap;
+  justify-content:left;
   align-items:center;
-  margin-top: 25px;   
-
+  margin-top: 25px; 
+ 
+}
+.ctn1{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-top: 12px;
+  
 }
 
+.ctn2{
+  
+  margin-left: 35px;
+  margin-top: 15px;
+}
 .btn{
   display: flex !important;
   justify-content: center;
@@ -171,7 +184,6 @@ background: linear-gradient(90deg, rgba(252,127,69,1) 0%, rgba(58,171,180,1) 100
  height: 40%;
  width: 50%;
 }
-
 
 
 

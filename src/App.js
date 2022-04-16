@@ -21,7 +21,9 @@ function App() {
     <CartProvider> 
     <BrowserRouter >
     <NavBar/>
-    <div className='ctn'> 
+   <div className='row justify-content-center'> 
+    <div className='col-10'> 
+    <div className='ctn1'> 
     <Routes>
       <Route path='/'element={<ItemListContainer/>}/>
       <Route path='/productos/:category'element={<ItemListContainer/>}/>
@@ -29,6 +31,8 @@ function App() {
       <Route path='/cart' element={<Cart/>}/>
       <Route path='/checkout' element={ <Checkout/>}/> 
     </Routes>
+    </div>
+    </div>
     </div>
     </BrowserRouter>
     </CartProvider>

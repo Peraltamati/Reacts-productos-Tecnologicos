@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom'
 
 const Item = ({id,titulo,descripcion,img,precio}) => {
   return (
-    <div className='container'> 
+    <div className='ctn2'> 
      <div className="card"  style={{ width: '18rem' }}>
+     <div className="card-header"><h5 className='my-0 fw-bolder'>{titulo}</h5></div>
       <img className="card-img-top" src={img} alt="Card image cap"/>
         <div className="card-body">
-          <h5 className="card-title">{titulo}</h5>
             <p className="card-text">{descripcion}</p>
             <h6 className="precio">$ {precio}</h6>
             <Link to={`/detail/${id}`} className="btn btn-primary mx-auto">Mas detalles</Link>

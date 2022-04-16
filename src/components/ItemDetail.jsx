@@ -35,11 +35,11 @@ const ItemDetail = ({id,titulo,precio,descripcion,img,stock}) => {
   return (
 <div>
   
-  <div className='container'> 
+  <div className='ctn1'> 
      <div className="card"  style={{ width: '18rem' }}>
+     <div className="card-header"><h5 className='my-0 fw-bold'>{titulo}</h5></div>
       <img className="card-img-top" src={img} alt="Card image cap"/>
         <div className="card-body">
-          <h5 className="card-title">{titulo}</h5>
             <p className="card-text">{descripcion}</p>
               <h6 className='precio'>$ {precio}</h6>
                 <ItemCount stock={stock} cantidad={cantidad} setCantidad={setCantidad} />

@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
-import mas from './assets/mas.png'
-import menos from './assets/menos.png'
-import ItemDetail from './ItemDetail'
+import React from 'react'
+
+
 
 const ItemCount = ({stock,cantidad,setCantidad}) => {
 
