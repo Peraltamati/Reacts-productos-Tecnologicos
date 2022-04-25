@@ -1,3 +1,22 @@
+
+# Descripcion:
+
+Pagina creada con react de ventas de productos tecnologicos donde se encuentran
+lo ultimo en monitores, cpu, notebook... para uso laboral o gamer con sus detalles y su precio calidad. Pagina sencilla y facil de navegar.
+
+# Se utilizo:
+
+- Componentes
+- Props
+- Hook
+- Context
+- Firebase
+
+Para los estilos que se usaron son **Bootstrap y css**
+
+# Realizado por: ## **Peralta Matias
+ 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
