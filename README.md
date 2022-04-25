@@ -14,7 +14,9 @@ lo ultimo en monitores, cpu, notebook... para uso laboral o gamer con sus detall
 
 Para los estilos que se usaron son **Bootstrap y css**
 
-# Realizado por: ## **Peralta Matias
+# Realizado por: 
+
+**Peralta Matias**
  
 
 # Getting Started with Create React App
